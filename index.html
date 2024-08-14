@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="header" id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.jpg" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i style="font-size:24px" class="fa" onclick="closemenu()">&#xf00d;</i>
+                </ul>
+                <i style="font-size:24px" class="fa" onclick="openmenu()">&#xf0c9;</i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, <br>I'm <span>Ankam Manideep</span></h1>
+                <p>#Web_Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/IMG_0168.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus iure, vero
+                        voluptatibus sequi sit voluptates cum similique? Beatae provident, recusandae labore neque
+                        dignissimos laudantium blanditiis laborum voluptate officiis velit.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link">Skills</p>
+                        <!-- <p class="tab-links">Education</p>
+                            <p class="tab-links">Projects</p> -->
+                    </div>
+                    <div class="tab-contents">
+                        <ul>
+                            <li>Html5</li>
+                            <li>Css3</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                            <li>SQL</li>
+                            <li>Python Programming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="project" id="project">
+        <div class="conatiner">
+            <h1 class="sub-title" id="subb">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <h2>Accuarate Speed Control of Electric Car</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus hic quos mollitia, ex eos
+                        voluptate, velit delectus modi ipsa eveniet exercitationem dignissimos officia optio? Nesciunt
+                        optio ducimus consequuntur aut officia?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Vehicle Starter on Face Detection</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus hic quos mollitia, ex eos
+                        voluptate, velit delectus modi ipsa eveniet exercitationem dignissimos officia optio? Nesciunt
+                        optio ducimus consequuntur aut officia?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>To-do List</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus hic quos mollitia, ex eos
+                        voluptate, velit delectus modi ipsa eveniet exercitationem dignissimos officia optio? Nesciunt
+                        optio ducimus consequuntur aut officia?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="conatiner">
+            <div class="">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i style="font-size:24px" class="fa">&#xf0e0;</i>manideepankam11119@gmail.com</p>
+                    <p><i style="font-size:24px" class="fa">&#xf095;</i>+91 9121814043</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/manideep-ankam-00b22122a/"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/AnkamManideep"><i class="fa fa-github"></i></a>
+                    </div><br><br>
+                    <a href="/images/ANKAM MANIDEEP CV.pdf"download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right"><br>
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter your name......." required>
+                        <input type="email" name="email" placeholder="Enter your Email...." required>
+                        <textarea name="Message" rows="6" placeholder="Your Message.........."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Ankam Manideep &hearts; </p>
+        </div>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
